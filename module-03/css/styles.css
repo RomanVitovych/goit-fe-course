@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*: ::before,
+*: ::after {
+    box-sizing: inherit
+}
+
+body {
+    font-family: 'Roboto',
+        sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.page-navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.page-navigation li {
+    display: inline-block;
+}
+
+.page-navigation {}
+
+.page-navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.page-navigation a:hover {
+    color: #03a9f4;
+}
+
+.articles-list-item {
+    list-style: none;
+
+}
+
+.articles-list-title {
+    color: #b4ad9e;
+    text-transform: uppercase;
+}
+
+.articles-list-item h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.articles-list-about {}
