@@ -16,6 +16,12 @@ body {
     line-height: 24px;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 900px;
     margin: 0 auto;
@@ -23,40 +29,104 @@ body {
 }
 
 .page-navigation {
+    display: inline-block;
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
+    width: 900px;
+    vertical-align: middle;
+    padding: 72px 0;
+    margin-bottom: 26px;
 }
 
 .page-navigation li {
     display: inline-block;
 }
 
-.page-navigation {}
+.page-navigation li:not(:last-child) {
+    margin-right: 110px;
+}
 
 .page-navigation a {
     text-decoration: none;
     text-transform: uppercase;
 }
 
+.page-navigation a:focus,
 .page-navigation a:hover {
     color: #03a9f4;
 }
 
-.articles-list-item {
+.articles-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
 
+.articles-list-item {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 130px;
+
+}
+
+.articles-list-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.articles-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
 }
 
 .articles-list-title {
     color: #b4ad9e;
     text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
 .articles-list-item h2 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
+    margin-bottom: 35px;
 }
 
-.articles-list-about {}
+.articles-list-about {
+    font-size: 14px;
+}
+
+.footer-navigation {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.load-batton {
+    border: none;
+    margin: 0;
+    padding: 20px 40px;
+    background-color: #dddcd7;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
