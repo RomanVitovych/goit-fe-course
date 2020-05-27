@@ -1,0 +1,239 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #555252;
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.page-header {
+    padding: 30px 0;
+}
+
+.site-logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    display: block;
+}
+
+.site-logo a {
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #555252;
+    font-weight: 300;
+}
+
+.site-logo::first-letter {
+    color: #1abc9c;
+    font-weight: 900;
+}
+
+.site-navigation {
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 396px;
+    list-style: none;
+}
+
+.site-navigation li {
+    float: left;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 36px;
+}
+
+.site-navigation a {
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    color: #555252;
+}
+
+.site-navigation a:focus,
+.site-navigation a:hover {
+    color: #1abc9c;
+}
+
+.main-body {
+    background-color: #e9f0fd;
+}
+
+.page-cataloge-name {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 900;
+    color: #515151;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-cataloge-name::after {
+    display: block;
+    width: 160px;
+    height: 8px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    background-color: #1abc9c;
+    content: "";
+}
+
+.page-cataloge-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.page-cataloge-item {
+    float: left;
+    width: 255px;
+    position: relative;
+}
+
+.page-cataloge-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.product-name {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 900;
+    background-color: #323232;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    width: 200px;
+    height: 40px;
+    padding-left: 16px;
+    padding-top: 4px;
+}
+
+
+.product-price {
+    float: right;
+    display: block;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    font-weight: 900;
+    background-color: #8c8c8c;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    width: 55px;
+    height: 40px;
+    padding-top: 4px;
+}
+
+.product-name:hover {
+    background-color: #1abc9c;
+}
+
+.product-price:hover {
+    background-color: #7fd9c7;
+}
+
+.overlay {
+
+    position: absolute;
+    width: 235px;
+    height: 260px;
+    background-color: rgb(0, 0, 0);
+    /* opacity: 0; */
+}
+
+/* .page-cataloge-item:hover .overlay {
+    opacity: 0.549;
+} */
+
+.overlay-icon1 {
+    position: absolute;
+    left: 35px;
+    top: 80px;
+    display: inline-block;
+    background-image: url(../img/icon1.png);
+    width: 50px;
+    height: 50px;
+}
+
+.overlay-icon2 {
+    position: absolute;
+    left: 94px;
+    top: 80px;
+    display: inline-block;
+    background-image: url(../img/icon2.png);
+    width: 50px;
+    height: 50px;
+}
+
+.overlay-icon3 {
+    position: absolute;
+    right: 35px;
+    top: 80px;
+    display: inline-block;
+    background-image: url(../img/icon3.png);
+    width: 50px;
+    height: 50px;
+}
+
+.overlay-icon4 {
+    position: absolute;
+    left: 35px;
+    bottom: 75px;
+    display: inline-block;
+    background-image: url(../img/icon4.png);
+    width: 166px;
+    height: 50px;
+}
+
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
