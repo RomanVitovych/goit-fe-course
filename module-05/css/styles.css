@@ -40,7 +40,7 @@ body {
     margin: 0;
     padding: 0;
     width: 80px;
-    display: block;
+    display: inline-block;
 }
 
 .site-logo a {
@@ -67,6 +67,7 @@ body {
 
 .site-navigation li {
     float: left;
+    margin-top: 5px;
 }
 
 .site-navigation li:not(:last-child) {
@@ -87,8 +88,16 @@ body {
     color: #1abc9c;
 }
 
+.banner {
+    background-image: url(../img/mainimage1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .main-body {
     background-color: #e9f0fd;
+
 }
 
 .page-cataloge-name {
@@ -112,6 +121,7 @@ body {
     background-color: #1abc9c;
     content: "";
 }
+
 
 .page-cataloge-list {
     list-style: none;
@@ -150,7 +160,7 @@ body {
 
 .product-price {
     float: right;
-    display: block;
+    display: inline-block;
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
@@ -173,17 +183,20 @@ body {
 }
 
 .overlay {
-
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%; -50%);
+
     width: 235px;
     height: 260px;
     background-color: rgb(0, 0, 0);
-    /* opacity: 0; */
+    opacity: 0;
 }
 
-/* .page-cataloge-item:hover .overlay {
+.page-cataloge-item:hover .overlay {
     opacity: 0.549;
-} */
+}
 
 .overlay-icon1 {
     position: absolute;
