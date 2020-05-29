@@ -1,300 +1,314 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
-    color: #555252;
+  font-family: "Roboto", sans-serif;
+  color: #555252;
 }
 
 .clearfix {
-    display: table;
-    content: "";
-    clear: both;
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .container {
-    width: 1110px;
-    margin: 0 auto;
-    background-color: #ffffff;
+  width: 1110px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 /* HEADER */
 .page-header {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .site-logo {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 80px;
-    display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  display: block;
 }
 
 .site-logo a {
-    font-size: 30px;
-    line-height: 32px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #555252;
-    font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555252;
+  font-weight: 300;
 }
 
 .site-logo::first-letter {
-    color: #1abc9c;
-    font-weight: 900;
+  color: #1abc9c;
+  font-weight: 900;
 }
 
 .site-navigation {
-    float: right;
-    margin: 0;
-    padding: 0;
-    width: 396px;
-    list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 396px;
+  list-style: none;
 }
 
 .site-navigation li {
-    float: left;
-    margin-top: 5px;
+  float: left;
+  margin-top: 5px;
 }
 
 .site-navigation li:not(:last-child) {
-    margin-right: 36px;
+  margin-right: 36px;
 }
 
 .site-navigation a {
-    font-size: 10px;
-    line-height: 12px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 900;
-    color: #555252;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 900;
+  color: #555252;
 }
 
 .site-navigation a:focus,
 .site-navigation a:hover {
-    color: #1abc9c;
+  color: #1abc9c;
 }
 
 .banner {
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 92px;
+  margin-bottom: 92px;
 }
 
 .banner:hover {
-    background-color: #000002;
-    opacity: 0.522;
+  background-color: #000002;
+  opacity: 0.522;
 }
-
-
-
 
 /* MAIN */
 .main-body {
-    background-color: #e9f0fd;
-
+  background-color: #e9f0fd;
 }
 
 /* NEW COLLECTION */
 /* CARDS */
 .page-cataloge-name {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 48px;
-    line-height: 58px;
-    font-weight: 900;
-    color: #515151;
-    margin: 0px;
-    padding: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 900;
+  color: #515151;
+  margin: 0px;
+  padding: 0px;
 }
 
 .page-cataloge-name::after {
-    display: block;
-    width: 160px;
-    height: 8px;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    background-color: #1abc9c;
-    content: "";
+  display: block;
+  width: 160px;
+  height: 8px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  background-color: #1abc9c;
+  content: "";
 }
 
-
 .page-cataloge-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 100px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
 }
 
 .page-cataloge-item {
-    float: left;
-    width: 255px;
-    position: relative;
+  float: left;
+  width: 255px;
+  position: relative;
 }
 
 .page-cataloge-item:not(:last-child) {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .relativy {
-    position: relative;
+  position: relative;
 }
 
 .product-name {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: inline-block;
-    font-size: 18px;
-    line-height: 32px;
-    color: #ffffff;
-    font-weight: 900;
-    background-color: #323232;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: left;
-    width: 200px;
-    height: 40px;
-    padding-left: 16px;
-    padding-top: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 900;
+  background-color: #323232;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  width: 200px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 4px;
 }
 
-
 .product-price {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: block;
-    font-size: 18px;
-    line-height: 32px;
-    color: #ffffff;
-    font-weight: 900;
-    background-color: #8c8c8c;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    width: 55px;
-    height: 40px;
-    padding-top: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 900;
+  background-color: #8c8c8c;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  width: 55px;
+  height: 40px;
+  padding-top: 4px;
 }
 
 .product-name:hover {
-    background-color: #1abc9c;
+  background-color: #1abc9c;
 }
 
 .product-price:hover {
-    background-color: #7fd9c7;
+  background-color: #7fd9c7;
 }
 
 .overlay {
-    position: absolute;
-    width: 255px;
-    height: 282px;
-    margin: 0;
-    padding: 0px;
-    list-style: none;
+  position: absolute;
+  width: 255px;
+  height: 282px;
+  margin: 0px;
+  padding: 80px 34px 75px 34px;
+  list-style: none;
+  border: 10px solid rgba(0, 0, 0, 0.01);
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+.overlay li {
+  display: inline-block;
+}
+.overlay li:nth-child(-n + 2) {
+  margin-right: 4px;
 }
 
 .overlay:hover {
-    background-color: rgba(0, 0, 0, 0.549)
+  background-color: rgba(0, 0, 0, 0.549);
 }
-
+.page-cataloge-item:hover .product-name {
+  background-color: #1abc9c;
+}
+.page-cataloge-item:hover .product-price {
+  background-color: #7fd9c7;
+}
 
 .icon1 {
-    opacity: 0;
-    position: absolute;
-    left: 45px;
-    top: 80px;
-    display: inline-block;
-    background-image: url(../img/icon1.png);
-    width: 50px;
-    height: 50px;
+  opacity: 0;
+  display: inline-block;
+  background-image: url(../img/Icons/icon1.png);
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.overlay:hover .icon1 {
+  opacity: 1;
+}
 .overlay .icon1:hover {
-    opacity: 1;
-    background-color: #1abc9c;
+  background-color: #1abc9c;
 }
-
 
 .icon2 {
-    opacity: 0;
-    position: absolute;
-    left: 103px;
-    top: 80px;
-    display: inline-block;
-    background-image: url(../img/icon2.png);
-    width: 50px;
-    height: 50px;
-    border: 1px solid white;
-    background-repeat: no-repeat;
-    background-position: center;
+  opacity: 0;
+  display: inline-block;
+  background-image: url(../img/Icons/icon2.png);
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.icon2:hover {
-    opacity: 1;
-    background-color: #1abc9c;
+.overlay:hover .icon2 {
+  opacity: 1;
+}
+.overlay .icon2:hover {
+  background-color: #1abc9c;
 }
 
 .icon3 {
-    opacity: 0;
-    position: absolute;
-    right: 45px;
-    top: 80px;
-    display: inline-block;
-    background-image: url(../img/icon3.png);
-    width: 50px;
-    height: 50px;
+  opacity: 0;
+  display: inline-block;
+  background-image: url(../img/Icons/icon3.png);
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.icon3:hover {
-    opacity: 1;
-    background-color: #1abc9c;
+.overlay:hover .icon3 {
+  opacity: 1;
 }
-
+.overlay .icon3:hover {
+  background-color: #1abc9c;
+}
 .icon4 {
-    opacity: 0;
-    position: absolute;
-    left: 45px;
-    bottom: 85px;
-    display: inline-block;
-    background-image: url(../img/icon4.png);
-    width: 166px;
-    height: 50px;
+  opacity: 0;
+  display: inline-block;
+  background-image: url(../img/Icons/icon4.png);
+  width: 166px;
+  height: 50px;
+  border: 1px solid white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #323232;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  color: white;
 }
 
-.icon4:hover {
-    opacity: 1;
+.overlay:hover .icon4 {
+  opacity: 1;
+}
+.overlay .icon4:hover {
+  background-color: #1abc9c;
 }
 
-
-.footer-info {}
+.footer-info {
+}
 
 .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
