@@ -1,0 +1,256 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    /* font-family: 'Kaushan Script',
+        cursive;
+    font-family: 'Montserrat',
+        sans-serif; */
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* ===== HEADER ===== */
+
+/* === Logo === */
+.site-logo {
+    width: 92px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-logo a {
+    font-size: 30px;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 700;
+    color: #95e1d3;
+}
+
+/* === Navigatio === */
+.navigation-list {
+    width: 490px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-list a {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 400;
+    color: #95e1d3;
+}
+
+/* ===== MAIN ===== */
+
+/* === Section service === */
+.service-title {
+    margin: 0;
+    padding: 0em;
+}
+
+.service-title p {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 'Kaushan Script',
+        cursive;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.service-title b {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+/* === Service list === */
+.service-list {
+    width: 380px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.photography {
+    padding-left: 50px;
+    position: relative;
+}
+
+.photography::before {
+    position: absolute;
+    background-image: url("../img/icon/ALARM\(icon1\).png");
+}
+
+.service-list h3 {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.service-list p {
+    margin: 0;
+    padding: 0;
+}
+
+.
+/* === Our team === */
+
+.our-team-title {
+    margin: 0;
+    padding: 0;
+}
+
+.our-team-title p {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 'Kaushan Script',
+        cursive;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.our-team-title b {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.our-team-describe {
+    margin: 0;
+    padding: 0;
+}
+
+/* === Our team list ==== */
+.our-team-list {
+    width: 380px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.our-team-name {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.our-team-about {
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Site-end ===== */
+.site-end address {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+}
+
+.site-end span {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #f38181;
+}
+
+.site-end input {
+    font-style: italic;
+}
+
+.footer-button {
+    border: none;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Montserrat',
+        sans-serif;
+    color: #ffffff;
+    background-color: #95e1d3;
+    margin: 0;
+    padding: 14px 34px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
