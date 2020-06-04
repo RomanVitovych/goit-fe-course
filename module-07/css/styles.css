@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Droid Serif";
+  /* назва одна */
+  src: url("../fonts/droidserifitalic.woff2");
+  /* різні файли */
+  font-weight: 400;
+  /* різна вага/жирність */
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Wisdom Script";
+  /* назва одна */
+  src: url("../fonts/Wisdom\ Script\ AI.woff2");
+  /* різні файли */
+  font-weight: 400;
+  /* різна вага/жирність */
+  font-style: normal;
+}
+
+/* font-family: 'Montserrat',
+  sans-serif;
+  font-family: 'Roboto Slab',
+  serif; */
+
+.container {
+  max-width: 940px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+button {
+  display: block;
+  border: none;
+  background: transparent;
+}
+
+/* ========== HEADER ========== */
+
+.site-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 120px;
+  margin-bottom: 52px;
+}
+
+/* ===== logo ===== */
+
+.site-logo a {
+  font-family: "Wisdom Script";
+  font-size: 26px;
+  line-height: 41px;
+  color: #fed136;
+  font-weight: 400;
+}
+
+/* ===== menu ===== */
+
+.site-navigation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 485px;
+}
+
+.site-navigation-list a {
+  font-family: "Montserrat";
+  font-size: 14px;
+  line-height: 41px;
+  color: #222222;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: color 0.3s linear;
+}
+
+.site-navigation-list a:focus,
+.site-navigation-list a:hover {
+  color: #fed136;
+}
+
+/* ========== MAIN ========== */
+
+/* ===== section servise ===== */
+.services {
+  margin-bottom: 120px;
+}
+
+.services-title {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 75px;
+  font-weight: 700;
+  color: #222222;
+  text-align: center;
+}
+
+.sub-services-title {
+  font-family: "Droid Serif";
+  font-size: 16px;
+  line-height: 20px;
+  font-style: italic;
+  font-weight: 400;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* === service list === */
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item {
+  width: 290px;
+}
+
+.services-list-item::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #fed136;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+}
+
+.bassket::before {
+  background-image: url("../img/icons/icon1.png");
+}
+
+.laptop::before {
+  background-image: url("../img/icons/icon2.png");
+}
+
+.lock::before {
+  background-image: url("../img/icons/icon3.png");
+}
+
+.services-list-item h4 {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 75px;
+  font-weight: 700;
+  color: #222222;
+  font-style: normal;
+  text-align: center;
+}
+
+.services-list-item p {
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #777777;
+  font-style: normal;
+  text-align: center;
+}
+
+/* ========== BACKGROUND ========== */
+.backfon {
+  min-height: 678px;
+  background-color: #222222;
+  background-image: url("../img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 20px;
+}
+
+/* ===== section contact =====*/
+.contact-title {
+  font-family: "Montserrat";
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 106px;
+  margin-bottom: 22px;
+}
+
+.sub-contact-title {
+  font-family: "Droid Serif";
+  font-size: 16px;
+  line-height: 20px;
+  font-style: italic;
+  font-weight: 400;
+  color: #777777;
+  text-align: center;
+  margin-bottom: 76px;
+}
+
+/* === signup form === */
+.signup-form {
+  margin-bottom: 30px;
+}
+
+.our-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-our-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.signup-item {
+  width: 455px;
+  height: 50px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 17px;
+  color: #777777;
+}
+
+.massege {
+  width: 455px;
+  height: 210px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 17px;
+  color: #777777;
+  resize: none;
+}
+
+input::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  padding-left: 20px;
+}
+
+textarea::placeholder {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #bbbbbb;
+  padding-left: 20px;
+  padding-top: 18px;
+
+}
+
+/* = validation = */
+.signup-item:focus {
+  outline: none;
+}
+
+.massege:focus {
+  outline: none;
+}
+
+.signup-item:focus:valid {
+  outline: 2px solid green;
+}
+
+.massege:focus:valid {
+  outline: 2px solid green;
+}
+
+.signup-item:focus:invalid {
+  outline: 2px solid red;
+}
+
+.massege:focus:invalid {
+  outline: 2px solid red;
+}
+
+/* === button === */
+
+.site-button {
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 24px 48px;
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 02%;
+  margin-bottom: 114px;
+  transition: all 0.3s linear;
+}
+
+.site-button:focus,
+.site-button:hover {
+  background: #fed136;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
