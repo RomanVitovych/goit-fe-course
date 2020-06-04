@@ -25,6 +25,7 @@ body {
     color: #999999;
 }
 
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -34,19 +35,38 @@ body {
 /* ===== HEADER ===== */
 
 /* === Logo === */
+
+
 .site-navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 100px;
     margin-bottom: 76px;
-
 }
 
 .site-logo {
     width: 92px;
     margin: 0;
     padding: 0;
+    animation: LOGO 1s linear;
+}
+
+@keyframes LOGO {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .site-logo a {
@@ -73,12 +93,12 @@ body {
     font-size: 14px;
     line-height: 17px;
     text-decoration: none;
-    text-transform: none;
+    text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #95e1d3;
     padding-bottom: 12px;
-    transition: color 0.3s linear;
+    transition: color 0.2s linear;
 
 }
 
@@ -134,6 +154,7 @@ body {
 
 
 /* === Service list === */
+
 .service-list {
     display: flex;
     flex-wrap: wrap;
@@ -293,6 +314,14 @@ body {
     position: relative;
 }
 
+.ficus-main {
+    background: #95e1d3;
+}
+
+.ficus {
+    transition: all 0.2s linear;
+}
+
 .overlay {
     display: flex;
     justify-content: center;
@@ -300,13 +329,14 @@ body {
     position: absolute;
     width: 380px;
     height: 470px;
-    background-image: linear-gradient(to top, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
     opacity: 0;
-    box-shadow: 10px 20px #95e1d3;
+    transition: all 0.2s linear;
 }
 
 .ficus:hover .overlay {
-    opacity: 0.9;
+    opacity: 1;
+
 }
 
 .ficus:hover {
@@ -324,9 +354,14 @@ body {
     width: 56px;
     height: 56px;
     border: 1px solid #f38181;
-    background-color: #fce38a;
+    background-color: rgba(252, 227, 138, 1);
     cursor: pointer;
+}
 
+.soc-icon:focus,
+.soc-icon:hover {
+    background-color: #95e1d3;
+    transition: all 0.2s linear;
 }
 
 .facebook {
@@ -353,10 +388,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.soc-icon:focus,
-.soc-icon:hover {
-    background-color: #95e1d3;
-}
+
 
 
 /* ===== Site-end ===== */
@@ -376,28 +408,56 @@ body {
     color: #333333;
 }
 
-.site-end span {
+.site-end a {
     font-size: 14px;
     line-height: 17px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-decoration: none;
+    color: #333333;
+    transition: all 0.2s linear;
+
+}
+
+.site-end a:focus,
+.site-end a:hover {
     color: #f38181;
 }
 
+/* === fitback === */
+.fitback {
+    font-size: 0;
+}
+
 .site-end input {
+    display: inline-block;
+    vertical-align: middle;
     width: 230px;
-    height: 40px;
-    border: none;
-    font-style: italic;
-    background-color: #828282;
+    height: 41px;
+    outline: none;
+    font-size: 15px;
+    border: 2px solid #e7e7e7;
+    border-right: none;
+    font-style: normal;
+    background-color: #ffffff;
     cursor: pointer;
     margin: 0;
     padding: 0;
 }
 
+input::placeholder {
+    font-size: 15px;
+    font-style: italic;
+    color: #e7e7e7;
+}
+
+
 .footer-button {
+    display: inline-block;
+    vertical-align: middle;
     border: none;
+    border-radius: 02%;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
@@ -406,8 +466,17 @@ body {
     color: #ffffff;
     background-color: #95e1d3;
     margin: 0;
-    padding: 14px 34px;
+    padding: 12px 34px;
     cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.footer-button:focus,
+.footer-button:hover {
+    background-color: #f38181;
+    color: #ffffff;
+
+
 }
 
 .visually-hidden {
