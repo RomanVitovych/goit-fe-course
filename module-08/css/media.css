@@ -4,12 +4,21 @@
   }
 
   .head-image {
-    background-image: linear-gradient(
-        rgba(26, 25, 21, 0.2),
-        rgba(26, 25, 21, 0.2)
-      ),
+    background-image: linear-gradient(rgba(26, 25, 21, 0.2),
+        rgba(26, 25, 21, 0.2)),
       url("../img/tablet-image.jpg");
     min-height: 700px;
+  }
+
+  /* ========== HEADER ========== */
+
+  .hat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    min-height: 120px;
+    margin-bottom: 100px;
   }
 
   .site-sign {
@@ -24,14 +33,6 @@
     margin-bottom: 0;
   }
 
-  .hat {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    min-height: 120px;
-    margin-bottom: 100px;
-  }
 
   .site-name {
     font-size: 52px;
@@ -49,7 +50,7 @@
 
   /* ========== MAIN ========== */
 
-  /* === employees list */
+  /* === employees list ===*/
 
   .site-employees-title {
     margin-bottom: 32px;
@@ -68,6 +69,7 @@
     width: 236px;
     padding: 0 10px;
   }
+
   .site-employees-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 58px;
   }
@@ -75,33 +77,42 @@
   .site-employees-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
+
   .part2 {
     order: 3;
   }
+
   .part4 {
     order: 4;
   }
+
   /* === other partners === */
   .other-partners a {
     padding: 12px 30px;
   }
 }
 
+
+
+
+
+
 @media (min-width: 962px) {
   .container {
     width: 942px;
   }
+
   .head-image {
-    background-image: linear-gradient(
-        rgba(26, 25, 21, 0.2),
-        rgba(26, 25, 21, 0.2)
-      ),
+    background-image: linear-gradient(rgba(26, 25, 21, 0.2),
+        rgba(26, 25, 21, 0.2)),
       url("../img/desktop-image.jpg");
     min-height: 700px;
   }
+
   .site-employees-title {
     margin-bottom: 32px;
   }
+
   .site-employees-list {
     display: flex;
     width: 942px;
@@ -109,10 +120,12 @@
     justify-content: space-between;
     margin-bottom: 52px;
   }
+
   .site-employees-item {
     width: 220px;
     margin-bottom: 0;
   }
+
   .site-employees-item:not(:nth-last-child(5)) {
     margin-bottom: 0;
   }

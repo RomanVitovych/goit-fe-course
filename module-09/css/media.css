@@ -1,0 +1,89 @@
+@media (min-width: 768px) {
+    .container {
+        width: 748px;
+    }
+
+    .head-image {
+        min-height: 700px;
+    }
+
+    /* ========== HEADER ========== */
+
+    .hat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        min-height: 120px;
+        width: 748px;
+        margin-bottom: 100px;
+    }
+
+    .site-sign {
+        justify-content: flex-end;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+
+    .site-logo {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+
+    .site-name {
+        font-size: 52px;
+        margin-bottom: 34px;
+    }
+
+    .site-subname {
+        width: 404px;
+        margin-bottom: 44px;
+    }
+
+    .site-partner a {
+        padding: 16px 20px;
+    }
+
+    /* ========== MAIN ========== */
+
+    /* === employees list ===*/
+
+    .site-employees-title {
+        margin-bottom: 32px;
+    }
+
+
+    .part2 {
+        order: 3;
+    }
+
+    .part4 {
+        order: 4;
+    }
+
+    /* === other partners === */
+
+
+    .other-partners a {
+        padding: 12px 30px;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 962px) {
+    .container {
+        width: 942px;
+    }
+
+
+    .site-employees-title {
+        margin-bottom: 32px;
+    }
+
+}
