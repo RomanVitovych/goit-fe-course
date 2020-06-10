@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 778px) {
     .container {
         width: 748px;
     }
@@ -22,7 +22,7 @@
     .site-sign {
         justify-content: flex-end;
         margin-bottom: 0;
-        padding-top: 0;
+        padding: 0;
     }
 
     .site-logo {
@@ -34,6 +34,8 @@
     .site-name {
         font-size: 52px;
         margin-bottom: 34px;
+        width: 748px;
+
     }
 
     .site-subname {
@@ -51,6 +53,18 @@
 
     .site-employees-title {
         margin-bottom: 32px;
+
+    }
+
+    .site-employees-list {
+        width: 532px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .site-employees-item {
+        width: 236px;
+        padding: 0 10px;
     }
 
 
@@ -70,20 +84,49 @@
     }
 }
 
+@media (max-width: 747px) {
+    .employees-card [class*="col-"]:not(:last-child) {
+        margin-bottom: 26px;
+    }
+}
+
+@media (min-width: 748px) and (max-width: 941px) {
+    .employees-card [class*="col-"]:nth-child(-n+2) {
+        margin-bottom: 60px;
+    }
+}
 
 
 
 
 
-
-@media (min-width: 962px) {
+@media (min-width: 972px) {
     .container {
         width: 942px;
     }
 
+    .hat {
+        width: 942px;
+    }
+
+    .site-sign {
+        width: 466px;
+    }
+
+    .site-name {
+        width: 942px;
+    }
 
     .site-employees-title {
         margin-bottom: 32px;
     }
 
+    .site-employees-list {
+        width: 942px;
+    }
+
+    .site-employees-item {
+        width: 220px;
+
+    }
 }
