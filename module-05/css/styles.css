@@ -103,14 +103,13 @@ body {
 /* ===== banner ===== */
 .banner {
   position: relative;
-  /* display: block; */
+
   margin-bottom: 92px;
 }
 
 .banner img {
-  /* display: block; */
   width: 100%;
-  height: 600px;
+  min-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -126,42 +125,40 @@ body {
   background-color: rgba(0, 0, 0, 0.522);
 }
 
+.container {
+  position: relative;
+}
+
 .prev {
   position: absolute;
-  left: 250px;
+  left: 0;
   top: 230px;
   opacity: 1;
   width: 100px;
   height: 100px;
-  background-color: #1abc9c;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.next {
-  position: absolute;
-  right: 250px;
-  top: 230px;
-  opacity: 1;
-  width: 100px;
-  height: 100px;
-  background-color: #1abc9c;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.prev {
   background-image: url("../img/Icons/prev.png");
+  background-color: #1abc9c;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .next {
+  position: absolute;
+  right: 0;
+  top: 230px;
+  opacity: 1;
+  width: 100px;
+  height: 100px;
   background-image: url("../img/Icons/next.png");
+  background-color: #1abc9c;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .prev:focus,
@@ -178,7 +175,7 @@ body {
 
 .main-text {
   position: absolute;
-  top: 216px;
+  top: 206px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
@@ -284,8 +281,6 @@ body {
   padding-top: 4px;
 }
 
-
-
 /* ===== overlay ===== */
 
 .overlay {
@@ -296,14 +291,28 @@ body {
   margin: 0px;
   list-style: none;
   border: 10px solid rgba(0, 0, 0, 0.01);
+  border-bottom: 50px solid rgba(0, 0, 0, 0.01);
   background-color: rgba(0, 0, 0, 0.44);
   background-clip: padding-box;
   box-sizing: border-box;
 }
 
+/* === hover === */
+
 .page-cataloge-item:hover .overlay {
   opacity: 1;
 }
+
+.page-cataloge-item:hover .product-name {
+  background-color: rgb(26, 188, 156);
+}
+
+.page-cataloge-item:hover .product-price {
+  background-color: #7fd9c7;
+}
+
+
+/* === social icons === */
 
 .socials {
   position: absolute;
@@ -351,7 +360,7 @@ body {
 
 .icon4 {
   background-image: url("../img/Icons/icon4.png");
-  background-position: left;
+  background-position: 10px;
   width: 100%;
   background-color: #323232;
   padding: 0 10px;
