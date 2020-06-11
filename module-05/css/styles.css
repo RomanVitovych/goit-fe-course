@@ -228,6 +228,10 @@ body {
   content: "";
 }
 
+
+
+/* ===== page cataloge list ===== */
+
 .page-cataloge-list {
   list-style: none;
   margin: 0;
@@ -238,26 +242,21 @@ body {
   float: left;
   width: 255px;
   position: relative;
+  background-color: #323232;
+
 }
 
 .page-cataloge-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.relativy {
-  position: relative;
-}
 
 .product-name {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: inline-block;
   font-size: 18px;
   line-height: 32px;
   color: #ffffff;
   font-weight: 900;
-  background-color: #323232;
   text-transform: uppercase;
   text-decoration: none;
   text-align: left;
@@ -285,146 +284,85 @@ body {
   padding-top: 4px;
 }
 
-.product-name:hover {
-  background-color: #1abc9c;
-}
 
-.product-price:hover {
-  background-color: #7fd9c7;
-}
 
-/* === hover === */
+/* ===== overlay ===== */
 
 .overlay {
+  opacity: 0;
   position: absolute;
-  width: 255px;
-  height: 282px;
+  width: 100%;
+  height: 100%;
   margin: 0px;
-  padding: 80px 34px 75px 34px;
   list-style: none;
   border: 10px solid rgba(0, 0, 0, 0.01);
+  background-color: rgba(0, 0, 0, 0.44);
   background-clip: padding-box;
   box-sizing: border-box;
 }
 
-.overlay li {
+.page-cataloge-item:hover .overlay {
+  opacity: 1;
+}
+
+.socials {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 158px;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
   display: inline-block;
-}
-
-.overlay li:nth-child(-n + 2) {
-  margin-right: 4px;
-}
-
-.overlay:focus,
-.overlay:hover {
-  background-color: rgba(0, 0, 0, 0.549);
-}
-
-.page-cataloge-item:hover .product-name {
-  background-color: #1abc9c;
-}
-
-.page-cataloge-item:hover .product-price {
-  background-color: #7fd9c7;
-}
-
-.icon1 {
-  opacity: 0;
-  display: inline-block;
-  background-image: url("../img/Icons/icon1.png");
   width: 50px;
   height: 50px;
   border: 1px solid white;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(0, 0, 0, 0);
-  margin: 0;
-  padding: 0;
-}
-
-.overlay:hover .icon1 {
-  opacity: 1;
-}
-
-.overlay .icon1:focus,
-.overlay .icon1:hover {
-  background-color: #1abc9c;
-}
-
-.icon2 {
-  opacity: 0;
-  display: inline-block;
-  background-image: url("../img/Icons/icon2.png");
-  width: 50px;
-  height: 50px;
-  border: 1px solid white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0;
-  padding: 0;
-}
-
-.overlay:hover .icon2 {
-  opacity: 1;
-}
-
-.overlay .icon2:focus,
-.overlay .icon2:hover {
-  background-color: #1abc9c;
-}
-
-.icon3 {
-  opacity: 0;
-  display: inline-block;
-  background-image: url("../img/Icons/icon3.png");
-  width: 50px;
-  height: 50px;
-  border: 1px solid white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0;
-  padding: 0;
-}
-
-.overlay:hover .icon3 {
-  opacity: 1;
-}
-
-.overlay .icon3:focus,
-.overlay .icon3:hover {
-  background-color: #1abc9c;
-}
-
-.icon4 {
-  opacity: 0;
-  display: block;
-  background-image: url("../img/Icons/icon4.png");
-  width: 166px;
-  height: 50px;
-  border: 1px solid white;
-  background-repeat: no-repeat;
-  background-position-x: 15px;
-  background-position-y: 10px;
-  background-color: #323232;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 400;
   text-align: right;
   color: white;
-  padding: 0 10px;
   margin: 0;
+  padding: 0;
 }
 
-.overlay:hover .icon4 {
-  opacity: 1;
+.icon:nth-child(-n+2) {
+  margin-right: 4px;
 }
 
-.overlay .icon4:focus,
-.overlay .icon4:hover {
+.icon1 {
+  background-image: url("../img/Icons/icon1.png");
+}
+
+.icon2 {
+  background-image: url("../img/Icons/icon2.png");
+}
+
+.icon3 {
+  background-image: url("../img/Icons/icon3.png");
+}
+
+.icon4 {
+  background-image: url("../img/Icons/icon4.png");
+  background-position: left;
+  width: 100%;
+  background-color: #323232;
+  padding: 0 10px;
+  margin-top: 4px;
+}
+
+.icon:hover {
   background-color: #1abc9c;
 }
+
+
 
 /* ========== FOOTER ==========*/
 
