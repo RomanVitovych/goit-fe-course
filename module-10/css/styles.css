@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 100%;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    /* назва одна */
+    font-weight: 400;
+    /* різна вага/жирність */
+    font-style: normal;
+    src: url("../fonts/montserrat-v14-latin-regular.woff");
+    src: url("../fonts/montserrat-v14-latin-regular.woff2");
+    /* різні файли */
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    /* назва одна */
+    font-weight: 700;
+    /* різна вага/жирність */
+    font-style: normal;
+    src: url("../fonts/montserrat-v14-latin-700.woff");
+    src: url("../fonts/montserrat-v14-latin-700.woff2");
+    /* різні файли */
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    /* назва одна */
+    font-weight: 400;
+    /* різна вага/жирність */
+    font-style: normal;
+    src: url("../fonts/roboto-v20-latin-regular.woff");
+    src: url("../fonts/roboto-v20-latin-regular.woff2");
+    /* різні файли */
+}
+
+@font-face {
+    font-family: "Kaushan-Script";
+    /* назва одна */
+    font-weight: 400;
+    /* різна вага/жирність */
+    font-style: normal;
+    src: url("../fonts/kaushan-script-v8-latin-regular.woff");
+    src: url("../fonts/kaushan-script-v8-latin-regular.woff2");
+    /* різні файли */
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+button {
+    display: block;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/* ========== HEADER ========== */
+
+.banner {}
