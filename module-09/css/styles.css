@@ -23,46 +23,34 @@
     
     @font-face {
         font-family: "Montserrat-Regular";
-        /* назва одна */
         font-weight: 400;
-        /* різна вага/жирність */
         font-style: normal;
         src: url("../fonts/montserrat-v14-latin-regular.woff");
         src: url("../fonts/montserrat-v14-latin-regular.woff2");
-        /* різні файли */
     }
     
     @font-face {
         font-family: "Montserrat-Bold";
-        /* назва одна */
         font-weight: 700;
-        /* різна вага/жирність */
         font-style: normal;
         src: url("../fonts/montserrat-v14-latin-700.woff");
         src: url("../fonts/montserrat-v14-latin-700.woff");
-        /* різні файли */
     }
     
     @font-face {
         font-family: "Roboto-Regular";
-        /* назва одна */
         font-weight: 400;
-        /* різна вага/жирність */
         font-style: normal;
         src: url("../fonts/roboto-v20-latin-regular.woff");
         src: url("../fonts/roboto-v20-latin-regular.woff2");
-        /* різні файли */
     }
     
     @font-face {
         font-family: "Roboto-Light";
-        /* назва одна */
         font-weight: 300;
-        /* різна вага/жирність */
         font-style: normal;
         src: url("../fonts/roboto-v20-latin-300.woff");
         src: url("../fonts/roboto-v20-latin-300.woff2");
-        /* різні файли */
     }
     
     ul {
