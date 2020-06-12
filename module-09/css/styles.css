@@ -169,6 +169,7 @@
         padding: 16px 40px;
         background-color: #ff4e50;
         border-radius: 25px;
+        border: 2px solid transparent;
         transition: all 0.3s linear;
     }
     
@@ -282,6 +283,6 @@
     .other-partners:focus,
     .other-partners:hover {
         background-color: #ff4e50;
+        border-color: #ffffff;
         color: #ffffff;
-        border: #ffffff;
     }
