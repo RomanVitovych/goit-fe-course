@@ -1,298 +1,287 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-body {
-    font-family: "Montserrat-Bold", sans-serif;
-    font-weight: 700;
-}
-
-@font-face {
-    font-family: "Montserrat-Regular";
-    /* назва одна */
-    font-weight: 400;
-    /* різна вага/жирність */
-    font-style: normal;
-    src: url("../fonts/montserrat-v14-latin-regular.woff");
-    src: url("../fonts/montserrat-v14-latin-regular.woff2");
-    /* різні файли */
-}
-
-@font-face {
-    font-family: "Montserrat-Bold";
-    /* назва одна */
-    font-weight: 700;
-    /* різна вага/жирність */
-    font-style: normal;
-    src: url("../fonts/montserrat-v14-latin-700.woff");
-    src: url("../fonts/montserrat-v14-latin-700.woff");
-    /* різні файли */
-}
-
-@font-face {
-    font-family: "Roboto-Regular";
-    /* назва одна */
-    font-weight: 400;
-    /* різна вага/жирність */
-    font-style: normal;
-    src: url("../fonts/roboto-v20-latin-regular.woff");
-    src: url("../fonts/roboto-v20-latin-regular.woff2");
-    /* різні файли */
-}
-
-@font-face {
-    font-family: "Roboto-Light";
-    /* назва одна */
-    font-weight: 300;
-    /* різна вага/жирність */
-    font-style: normal;
-    src: url("../fonts/roboto-v20-latin-300.woff");
-    src: url("../fonts/roboto-v20-latin-300.woff2");
-    /* різні файли */
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    display: inline-block;
-}
-
-button {
-    display: block;
-    border: none;
-    background: transparent;
-}
-
-
-/* ========== HEADER ========== */
-
-.head-image {
-    background-image: linear-gradient(rgba(26, 25, 21, 0.2), rgba(26, 25, 21, 0.2)), url("../img/desktop-image.jpg");
-    min-height: 540px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    object-fit: cover;
-    padding: 0 15px;
-    margin-bottom: 66px;
-}
-
-
-/* === site sign === */
-
-.site-sign {
-    width: 100%;
-    padding: 30px 50px 0;
-    margin-bottom: 112px;
-}
-
-.site-sign a {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 1.2;
-    padding: 10px 20px;
-    border-radius: 25px;
-}
-
-.site-sign a:focus,
-.site-sign a:hover {
-    border: 2px solid #ffffff;
-}
-
-
-/* === site logo ===*/
-
-.site-logo {
-    margin-bottom: 34px;
-}
-
-.site-logo a {
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    transition: color 0.3s linear;
-}
-
-.site-logo a:focus,
-.site-logo a:hover {
-    color: #ff4e50;
-}
-
-
-/* === site name === */
-
-.site-name {
-    color: #ffffff;
-    font-size: 30px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 16px;
-}
-
-
-/* === site subname === */
-
-.site-subname {
-    font-family: "Roboto-Light", sans-serif;
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 300;
-    text-align: center;
-    width: 220px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-
-/* === site partner === */
-
-.site-partner {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 1.2;
-    padding: 16px 40px;
-    background-color: #ff4e50;
-    border-radius: 25px;
-    transition: all 0.3s linear;
-}
-
-.site-partner:focus,
-.site-partner:hover {
-    background-color: transparent;
-    color: #ff4e50;
-    border: 2px solid #ff4e50;
-}
-
-
-/* ========== MAIN ========== */
-
-
-/* === site employees title === */
-
-.site-employees-title {
-    font-size: 22px;
-    line-height: 1.2;
-    color: #333333;
-    text-align: center;
-    margin-bottom: 14px;
-}
-
-
-/* === site employees list === */
-
-.site-employees-list {
-    margin-bottom: 42px;
-}
-
-.site-employees-item {
-    width: 200px;
-    text-align: center;
-    padding: 0 50px;
-}
-
-.site-employees-name {
-    font-size: 14px;
-    line-height: 1.2;
-    color: #333333;
-    margin-bottom: 14px;
-}
-
-.site-employees-bio {
-    font-family: "Roboto-Light", sans-serif;
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 300;
-    color: #666666;
-    margin: 0;
-}
-
-.over {
-    display: inline-block;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.over img {
-    margin: 0 auto;
-}
-
-
-/* == position == */
-
-.back-icon {
-    position: absolute;
-    width: 37px;
-    height: 37px;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 4px solid white;
-    border-radius: 50%;
-    right: 0;
-    bottom: 0;
-}
-
-.employer1 {
-    background-color: #ff4e50;
-    background-image: url("../img/icons/icon1.png");
-}
-
-.employer2 {
-    background-color: #ffa507;
-    background-image: url("../img/icons/icon2.png");
-}
-
-.employer3 {
-    background-color: #1cd7ad;
-    background-image: url("../img/icons/icon3.png");
-}
-
-.employer4 {
-    background-color: #4e73db;
-    background-image: url("../img/icons/icon4.png");
-}
-
-
-/* === other partners === */
-
-.other-partners {
-    margin-bottom: 70px;
-}
-
-.other-partners {
-    text-align: center;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #ff4e50;
-    border: 2px solid #ff4e50;
-    border-radius: 25px;
-    padding: 12px 70px;
-    transition: all 0.3s linear;
-}
-
-.other-partners:focus,
-.other-partners:hover {
-    background-color: #ff4e50;
-    color: #ffffff;
-    border: #ffffff;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    body {
+        font-family: "Montserrat-Bold", sans-serif;
+        font-weight: 700;
+    }
+    
+    @font-face {
+        font-family: "Montserrat-Regular";
+        /* назва одна */
+        font-weight: 400;
+        /* різна вага/жирність */
+        font-style: normal;
+        src: url("../fonts/montserrat-v14-latin-regular.woff");
+        src: url("../fonts/montserrat-v14-latin-regular.woff2");
+        /* різні файли */
+    }
+    
+    @font-face {
+        font-family: "Montserrat-Bold";
+        /* назва одна */
+        font-weight: 700;
+        /* різна вага/жирність */
+        font-style: normal;
+        src: url("../fonts/montserrat-v14-latin-700.woff");
+        src: url("../fonts/montserrat-v14-latin-700.woff");
+        /* різні файли */
+    }
+    
+    @font-face {
+        font-family: "Roboto-Regular";
+        /* назва одна */
+        font-weight: 400;
+        /* різна вага/жирність */
+        font-style: normal;
+        src: url("../fonts/roboto-v20-latin-regular.woff");
+        src: url("../fonts/roboto-v20-latin-regular.woff2");
+        /* різні файли */
+    }
+    
+    @font-face {
+        font-family: "Roboto-Light";
+        /* назва одна */
+        font-weight: 300;
+        /* різна вага/жирність */
+        font-style: normal;
+        src: url("../fonts/roboto-v20-latin-300.woff");
+        src: url("../fonts/roboto-v20-latin-300.woff2");
+        /* різні файли */
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+    
+    button {
+        display: block;
+        border: none;
+        background: transparent;
+    }
+    /* ========== HEADER ========== */
+    
+    .head-image {
+        background-image: linear-gradient(rgba(26, 25, 21, 0.2), rgba(26, 25, 21, 0.2)), url("../img/desktop-image.jpg");
+        min-height: 540px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        padding: 0 15px;
+    }
+    /* === site sign === */
+    
+    .site-sign {
+        padding-top: 30px;
+        margin-bottom: 112px;
+    }
+    
+    .site-sign li:not(:last-child) {
+        margin-right: 20px;
+    }
+    
+    .site-sign a {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: 2px solid transparent;
+    }
+    
+    .site-sign a:focus,
+    .site-sign a:hover {
+        border-color: #ffffff;
+    }
+    /* === site logo ===*/
+    
+    .site-logo {
+        margin-bottom: 34px;
+    }
+    
+    .site-logo a {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        transition: color 0.3s linear;
+    }
+    
+    .site-logo a:focus,
+    .site-logo a:hover {
+        color: #ff4e50;
+    }
+    /* === site name === */
+    
+    .site-name {
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    /* === site subname === */
+    
+    .site-subname {
+        font-family: "Roboto-Light", sans-serif;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 1.2;
+        font-weight: 300;
+        text-align: center;
+        width: 220px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    /* === site partner === */
+    
+    .site-partner {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 1.2;
+        padding: 16px 40px;
+        background-color: #ff4e50;
+        border-radius: 25px;
+        transition: all 0.3s linear;
+    }
+    
+    .site-partner:focus,
+    .site-partner:hover {
+        background-color: transparent;
+        color: #ff4e50;
+        border: 2px solid #ff4e50;
+    }
+    /* ========== MAIN ========== */
+    /* === site employees title === */
+    
+    .site-employees {
+        padding-top: 66px;
+    }
+    
+    .site-employees-title {
+        font-size: 22px;
+        line-height: 1.2;
+        color: #333333;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    /* === site employees list === */
+    
+    .site-employees-list {
+        width: 280px;
+        margin: 0 auto;
+    }
+    
+    .site-employees-item {
+        padding: 0 32px;
+        margin-bottom: 30px;
+    }
+    
+    .site-employees-name {
+        font-size: 14px;
+        line-height: 1.2;
+        color: #333333;
+        margin-bottom: 14px;
+    }
+    
+    .site-employees-bio {
+        font-family: "Roboto-Light", sans-serif;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 300;
+        color: #666666;
+        margin: 0;
+    }
+    
+    .over {
+        display: inline-block;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    
+    .over img {
+        margin: 0 auto;
+    }
+    /* == position == */
+    
+    .back-icon {
+        position: absolute;
+        width: 37px;
+        height: 37px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 4px solid white;
+        border-radius: 50%;
+        right: 0;
+        bottom: 0;
+    }
+    
+    .employer1 {
+        background-color: #ff4e50;
+        background-image: url("../img/icons/icon1.png");
+    }
+    
+    .employer2 {
+        background-color: #ffa507;
+        background-image: url("../img/icons/icon2.png");
+    }
+    
+    .employer3 {
+        background-color: #1cd7ad;
+        background-image: url("../img/icons/icon3.png");
+    }
+    
+    .employer4 {
+        background-color: #4e73db;
+        background-image: url("../img/icons/icon4.png");
+    }
+    /* === other partners === */
+    
+    .other-partners {
+        margin-bottom: 70px;
+    }
+    
+    .other-partners {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #ff4e50;
+        border: 2px solid #ff4e50;
+        border-radius: 25px;
+        padding: 12px 70px;
+        transition: all 0.3s linear;
+    }
+    
+    .other-partners:focus,
+    .other-partners:hover {
+        background-color: #ff4e50;
+        color: #ffffff;
+        border: #ffffff;
+    }
