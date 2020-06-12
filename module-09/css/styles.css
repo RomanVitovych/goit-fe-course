@@ -206,6 +206,7 @@ button {
 }
 
 .site-employees-item {
+    width: 200px;
     text-align: center;
     padding: 0 50px;
 }
