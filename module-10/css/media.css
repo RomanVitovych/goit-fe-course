@@ -1,0 +1,12 @@
+@media (min-resolution: 2dppx) {
+    .banner {
+        background-image: -moz-linear-gradient(rgba(243, 129, 129, .8), rgba(252, 227, 138, .8)),
+            url("../img/mainimage@2x.jpg");
+        background-image: -webkit-linear-gradient(rgba(243, 129, 129, .8), rgba(252, 227, 138, .8)),
+            url("../img/mainimage@2x.jpg");
+        background-image: -ms-linear-gradient(rgba(243, 129, 129, .8), rgba(252, 227, 138, .8)),
+            url("../img/mainimage@2x.jpg");
+
+    }
+
+}
