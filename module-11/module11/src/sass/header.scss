@@ -2,120 +2,113 @@
 
 /* ===== Background header ===== */
 .banner {
-    background-image: -moz-linear-gradient(rgba(243, 129, 129, 0.8),
-            rgba(252, 227, 138, 0.8)),
-        url("../images/mainimage@1x.jpg");
-    background-image: -webkit-linear-gradient(rgba(243, 129, 129, 0.8),
-            rgba(252, 227, 138, 0.8)),
-        url("../images/mainimage@1x.jpg");
-    background-image: -ms-linear-gradient(rgba(243, 129, 129, 0.8),
-            rgba(252, 227, 138, 0.8)),
-        url("../images/mainimage@1x.jpg");
-    min-height: 1000px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: initial;
-    object-fit: cover;
-    padding: 0 15px;
+  background-image: $line-gradient,
+    url("../images/mainimage@1x.jpg");
+  min-height: 1000px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: initial;
+  object-fit: cover;
+  padding: 0 15px;
 }
 
 /* ===== SITE HEADER =====  */
 
 .site-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 26px;
-    margin-bottom: 182px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 26px;
+  margin-bottom: 182px;
 }
 
 /* ===== Logo ===== */
 
 .site-logo {
-    font-size: 30px;
-    line-height: 1.2;
-    color: #ffffff;
-    text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 /* ===== Menu ===== */
 
 .site-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 620px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 620px;
 }
 
 .site-menu__link {
-    font-family: "Montserrat-Regular";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-bottom: 4px solid transparent;
-    padding-bottom: 10px;
-    transition: all 0.2s linear;
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-bottom: 4px solid transparent;
+  padding-bottom: 10px;
+  transition: all 0.2s linear;
 }
 
 .site-menu__link-icon {
-    width: 18px;
-    height: 18px;
-    fill: #ffffff;
+  width: 18px;
+  height: 18px;
+  fill: #ffffff;
 }
 
 /* === hover === */
 
 .site-menu__link:focus,
 .site-menu__link:hover {
-    color: #fce38a;
-    border-bottom: 4px solid #fce38a;
+  color: #fce38a;
+  border-bottom: 4px solid #fce38a;
 }
 
 .site-menu__link-icon:focus,
 .site-menu__link-icon:hover {
-    fill: #fce38a;
+  fill: #fce38a;
 }
 
 /* ===== SITE TITLE ===== */
 
 .site-title {
-    font-family: "Kaushan-Script";
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 1.2;
-    color: #ffffff;
-    text-align: center;
-    margin: 0;
+  font-family: "Kaushan-Script";
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
 }
 
 .site-subtitle {
-    font-size: 150px;
-    line-height: 1.2;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 110px;
+  font-size: 150px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 110px;
 }
 
 /* ===== Button ===== */
 
 .main-btn {
-    font-size: 14px;
-    line-height: 1.2;
-    color: #ffffff;
-    text-transform: uppercase;
-    border: 2px solid #ffffff;
-    padding: 12px 30px;
-    margin: 0 auto;
-    transition: all 0.3s linear;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  padding: 12px 30px;
+  margin: 0 auto;
+  transition: all 0.3s linear;
 }
 
 /* === hover === */
 
 .main-btn:focus,
 .main-btn:hover {
-    color: #fce38a;
-    background-color: #ffffff;
+  color: #fce38a;
+  background-color: #ffffff;
 }

@@ -1,0 +1,159 @@
+/* ===== TEAM ===== */
+
+/* ===== Team title =====*/
+
+.team {
+  margin-bottom: 80px;
+}
+
+.team-title {
+  margin-bottom: 50px;
+}
+
+.team-title p {
+  font-family: "Kaushan-Script";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #333333;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.team-subtitle {
+  display: block;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.team-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f38181;
+  margin: 0 auto;
+}
+
+.team-about {
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #999999;
+  width: 900px;
+  padding: 0 10px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 92px;
+}
+
+/* ===== Team list ===== */
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-list__item {
+  width: 380px;
+
+}
+
+.team-list__name {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 10px;
+
+}
+
+.team-list__about {
+  font-size: "Roboto-Regular";
+  font-size: 14px;
+  font-weight: 24px;
+  color: #999999;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+/* === Overlay === */
+
+.team-list__item {
+  position: relative;
+}
+
+.back-fon {
+  background: #95e1d3;
+}
+
+.fon {
+  transition: all 0.2s linear;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 380px;
+  height: 470px;
+  background-image: $line-gradient;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.fon:hover .overlay {
+  opacity: 1;
+
+}
+
+.fon:focus,
+.fon:hover {
+  transform: translate(-10px, -10px);
+}
+
+/* === soc icons === */
+
+.overlay__icons {
+  display: flex;
+  list-style: none;
+}
+
+.overlay__soc {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #f38181;
+  background-color: rgba(252, 227, 138, 1);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.overlay__soc:focus,
+.overlay__soc:hover {
+  background-color: #f38181;
+}
+
+.overlay__soc-icon {
+  width: 26px;
+  height: 26px;
+  fill: #f38181;
+  transition: all 0.2s linear;
+}
+
+.overlay__soc:focus .overlay__soc-icon,
+.overlay__soc:hover .overlay__soc-icon {
+  fill: #ffffff;
+
+}

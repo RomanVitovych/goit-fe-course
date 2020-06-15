@@ -1,0 +1,93 @@
+/* ========== FOOTER ========== */
+
+/* ===== Site footer ===== */
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 62px;
+}
+
+.site-footer address {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+}
+
+.site-footer a {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: #333333;
+  transition: all 0.2s linear;
+}
+
+/* === hover === */
+
+.site-footer a:focus,
+.site-footer a:hover {
+  color: #f38181;
+}
+
+/* ===== Fitback ===== */
+
+.fitback {
+  font-size: 0;
+}
+
+.site-footer input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 230px;
+  height: 41px;
+  outline: none;
+  font-size: 15px;
+  border: 2px solid #e7e7e7;
+  border-right: none;
+  font-style: normal;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+input::placeholder {
+  font-family: "Roboto-Regular";
+  font-size: 15px;
+  font-style: italic;
+  color: #e7e7e7;
+  padding-left: 10px;
+}
+
+.footer-button {
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  border-radius: 02%;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  background-color: #95e1d3;
+  margin: 0;
+  padding: 12px 34px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+/* === hover === */
+
+.footer-button:focus,
+.footer-button:hover {
+  background-color: #f38181;
+  color: #ffffff;
+}
