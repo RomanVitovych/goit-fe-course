@@ -3,4 +3,11 @@
  */
 
 @import 'normalize.scss';
-@import 'base.scss';
+@import './helpers/fonts.scss';
+@import './helpers/variables.scss';
+@import './base.scss';
+@import './header.scss';
+@import './section/service.scss';
+@import './section/team.scss';
+@import './footer.scss';
+
