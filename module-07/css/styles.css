@@ -7,7 +7,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 img {
@@ -42,7 +42,7 @@ img {
   serif; */
 
 .container {
-  max-width: 940px;
+  width: 940px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -197,6 +197,11 @@ button {
   background-repeat: no-repeat;
   background-position: right bottom 20px;
 }
+.contact {
+  width: 940px;
+  padding: 0;
+  margin: 0 auto;
+}
 
 /* ===== section contact =====*/
 .contact-title {
@@ -224,23 +229,22 @@ button {
 }
 
 /* === signup form === */
-.signup-form {
-  margin-bottom: 30px;
-}
 
-.our-form {
+.signup-form {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 940px;
 }
 
 .main-our-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 455px;
 }
 
-.signup-item {
-  width: 455px;
+.signup-item { 
   height: 50px;
   font-family: "Montserrat";
   font-size: 16px;
@@ -248,11 +252,14 @@ button {
   font-style: normal;
   line-height: 17px;
   color: #777777;
+  padding: 0 10px;
 }
-
+.signup-item:not(:last-child) {
+  margin-bottom: 30px;
+}
 .massege {
   width: 455px;
-  height: 210px;
+  height: 100%;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 700;
@@ -260,6 +267,7 @@ button {
   line-height: 17px;
   color: #777777;
   resize: none;
+  padding: 0 10px;
 }
 
 input::placeholder {
@@ -324,7 +332,9 @@ textarea::placeholder {
   padding: 24px 48px;
   cursor: pointer;
   margin: 0 auto;
-  border-radius: 02%;
+  border-radius: 3%;
+  border: 1px solid #ffffff;
+  margin-top: 30px;
   margin-bottom: 114px;
   transition: all 0.3s linear;
 }
@@ -332,6 +342,7 @@ textarea::placeholder {
 .site-button:focus,
 .site-button:hover {
   background: #fed136;
+  border: 1px solid transparent;
 }
 
 .visually-hidden {
