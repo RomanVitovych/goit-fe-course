@@ -2,7 +2,7 @@
 
 /* ===== Background header ===== */
 .banner {
-  background-image: $bg-l-n,
+  background: $bg-l-g,
     url("../images/mainimage@1x.jpg");
   min-height: 1000px;
   background-repeat: no-repeat;
@@ -15,9 +15,7 @@
 /* ===== SITE HEADER =====  */
 
 .site-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include positions;
   padding-top: 26px;
   margin-bottom: 182px;
 }
@@ -34,14 +32,12 @@
 /* ===== Menu ===== */
 
 .site-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include positions;
   width: 620px;
 }
 
 .site-menu__link {
-  font-family: "Montserrat-Regular";
+  font-family: $ff-m-r;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -50,31 +46,30 @@
   border-bottom: 4px solid transparent;
   padding-bottom: 10px;
   transition: all 0.2s linear;
+
+  &:focus,
+  &:hover {
+  color: #fce38a;
+  border-bottom: 4px solid #fce38a;
+  }
 }
 
 .site-menu__link-icon {
   width: 18px;
   height: 18px;
   fill: #ffffff;
-}
 
-/* === hover === */
-
-.site-menu__link:focus,
-.site-menu__link:hover {
-  color: #fce38a;
-  border-bottom: 4px solid #fce38a;
-}
-
-.site-menu__link-icon:focus,
-.site-menu__link-icon:hover {
+  &:focus,
+  &:hover {
   fill: #fce38a;
+  }
 }
+
 
 /* ===== SITE TITLE ===== */
 
 .site-title {
-  font-family: "Kaushan-Script";
+  font-family: $ff-k-s;
   font-weight: 400;
   font-size: 72px;
   line-height: 1.2;
@@ -103,12 +98,14 @@
   padding: 12px 30px;
   margin: 0 auto;
   transition: all 0.3s linear;
-}
 
-/* === hover === */
-
-.main-btn:focus,
-.main-btn:hover {
+  &:focus,
+  &:hover {
   color: #fce38a;
   background-color: #ffffff;
+  }
 }
+
+
+
+
