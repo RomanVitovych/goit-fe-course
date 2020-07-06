@@ -11,7 +11,7 @@
 }
 
 .team-title p {
-  font-family: "Kaushan-Script";
+  font-family: $ff-k-s;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.2;
@@ -40,7 +40,7 @@
 }
 
 .team-about {
-  font-family: "Roboto-Regular";
+  font-family: $ff-r-r;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -66,7 +66,7 @@
 }
 
 .team-list__name {
-  font-family: "Montserrat-Regular";
+  font-family: $ff-m-r;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -79,7 +79,7 @@
 }
 
 .team-list__about {
-  font-size: "Roboto-Regular";
+  font-size: $ff-r-r;
   font-size: 14px;
   font-weight: 24px;
   color: #999999;
@@ -100,16 +100,21 @@
 
 .fon {
   transition: all 0.2s linear;
+
+  &:focus,
+  &:hover {
+  transform: translate(-10px, -10px);
+  }
 }
 
 .overlay {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   position: absolute;
   width: 380px;
   height: 470px;
-  background-image: $line-gradient;
+  background: $bg-l-g;
   opacity: 0;
   transition: all 0.2s linear;
 }
@@ -119,10 +124,7 @@
 
 }
 
-.fon:focus,
-.fon:hover {
-  transform: translate(-10px, -10px);
-}
+
 
 /* === soc icons === */
 
@@ -138,12 +140,14 @@
   background-color: rgba(252, 227, 138, 1);
   cursor: pointer;
   transition: all 0.2s linear;
+
+  &:focus,
+  &:hover {
+  background-color: #f38181;
+  }
 }
 
-.overlay__soc:focus,
-.overlay__soc:hover {
-  background-color: #f38181;
-}
+
 
 .overlay__soc-icon {
   width: 26px;
@@ -155,5 +159,4 @@
 .overlay__soc:focus .overlay__soc-icon,
 .overlay__soc:hover .overlay__soc-icon {
   fill: #ffffff;
-
 }

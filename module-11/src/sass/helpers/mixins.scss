@@ -1,0 +1,5 @@
+@mixin positions ($ds: flex, $j-c: space-between, $a-i: center) {
+  display: $ds;
+  justify-content: $j-c;
+  align-items: $a-i;  
+}
