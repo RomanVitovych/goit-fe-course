@@ -1,119 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <title>Homework 05</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
 </head>
-
 <body>
-  <header class="page-header container clearfix">
-    <nav class="site-head">
-      <div class="site-logo">
-        <a href="#">Mart</a>
-      </div>
-      <ul class="site-navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Page</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contuct us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="page-header wraper clearfix">
+        <nav >
+            <div class="site-logo">
+              <a href="#">Mart</a>
+            </div>
+            <ul class="site-navigation">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Page</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contuct us</a></li>
+            </ul>
+          </nav>
+    </header>
 
-  <main class="main-body">
-    <h1 class="page-name visually-hidden">internet store</h1>
-    <section class="title">
-      <div class="banner">
-        <img src="img/site-image.jpg" alt="none image" width=100% height="600" />
-        <div class="overlay-main">
-          <div class="main-title container">
-            <button class="prev"></button>
+    <main>
+        <h1 class="visually-hidden">internet store</h1>
 
-            <p class="main-text">Affordable paris tour <br />
-              <span class="second-text">city tours/tour tickets/tour guides</span>
+        <section class="banner container">
+            <button class="banner-button prev"></button>
+            <button class="banner-button next"></button>
+            <ul>
+                <li>
+                <img
+                    src="./img/site-image.jpg"
+                    alt="slide img"
+                    width="1600px"
+                    height="600px"
+                />
+                <div class="text">
+                    <p class="main-text">
+                        affordable paris tours
+                    </p>
+                    <p class="second-text">
+                    city tours / tour tickets / tour guides
+                    </p>
+                </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="page-catalog container">
+            <div class="wraper">
+              <div class="catalog">
+              <h2 class="page-catalog-name">New Collection</h2>
+              <ul class="page-catalog-list clearfix">
+                <li class="page-catalog-item">
+                  <div class="overlay_card">               
+                    <div class="overlay">
+                      <div class="overlay-icon">
+                        <button class="icon1"></button>
+                      </div>
+                      <div class="overlay-icon">
+                        <button class="icon2"></button>
+                      </div>
+                      <div class="overlay-icon">
+                        <button class="icon3"></button>
+                      </div>
+                      <div class="add">
+                        <button class="add-icon">
+                          <p class="icon4">add to cart</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/image1.jpg"
+                    alt="blue-tshirt"
+                    width="255px"
+                    height="322px"
+                  />
+                  <div class="product-name">
+                    <a href="#" class="name">Blue Tishirt</a>
+                    <p class="price">$26</p>
+                  </div>
+                </li>
+                <li class="page-catalog-item">
+                  <div class="overlay_card">               
+                    <div class="overlay">
+                      <div class="overlay-icon">
+                        <button class="icon1"></button>
+                      </div>
+                      <div class="overlay-icon">
+                        <button class="icon2"></button>
+                      </div>
+                      <div class="overlay-icon">
+                        <button class="icon3"></button>
+                      </div>
+                      <div class="add">
+                        <button class="add-icon">
+                          <p class="icon4">add to cart</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/image2.jpg"
+                    alt="woman shirt"
+                    width="255px"
+                    height="322px"
+                  />
+                  <div class="product-name">
+                    <a href="#" class="name">Woman shirt</a>
+                    <p class="price">$31</p>
+                  </div>
+                </li>
+                <li class="page-catalog-item">
+                  <div class="overlay_card">               
+                    <div class="overlay">
+                      <div class="overlay-icon">
+                        <button class="icon1"></button>
+                      </div>
+                      <div class="overlay-icon">
+                        <button class="icon2"></button>
+                      </div>
+                      <div class="overlay-icon">
+                        <button class="icon3"></button>
+                      </div>
+                      <div class="add">
+                        <button class="add-icon">
+                          <p class="icon4">add to cart</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/image3.jpg"
+                    alt="yellow tshirt"
+                    width="255px"
+                    height="322px"
+                  />
+                  <div class="product-name">
+                    <a href="#" class="name">Yellow tshirt</a>
+                    <p class="price">$21</p>
+                  </div>
+                </li>
+                <li class="page-catalog-item">
+                  <div class="overlay_card">               
+                    <div class="overlay">
+                      <div class="overlay-icon">
+                        <button class="icon1"></button>
+                      </div>
+                      <div class="overlay-icon">
+                        <button class="icon2"></button>
+                      </div>
+                      <div class="overlay-icon">
+                        <button class="icon3"></button>
+                      </div>
+                      <div class="add">
+                        <button class="add-icon">
+                          <p class="icon4">add to cart</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="./img/image4.jpg"
+                    alt="cool-lingerie"
+                    width="255px"
+                    height="322px"
+                  />
+                  <div class="product-name">
+                    <a href="#" class="name">Cool lingerie</a>
+                    <p class="price">$56</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+            
+          </section>
+    </main>
+    <footer class="container"> 
+        <div class="footer-title wraper">
+            <p class="title">
+              All rights reserved &copy; Dokan | designed
+              <a href="#">ThemenGraph</a>
             </p>
-
-            <button class="next"></button>
           </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="page-catalog container">
-      <h2 class="page-cataloge-name">New collection</h2>
-      <ul class="page-cataloge-list clearfix">
-        <li class="page-cataloge-item">
-          <div class="overlay">
-            <div class="socials">
-              <button class="icon icon1"></button>
-              <button class="icon icon2"></button>
-              <button class="icon icon3"></button>
-              <button class="icon icon4">Add to cart</button>
-            </div>
-          </div>
-          <a href="#"><img src="img/image1.jpg" alt="none image" width="255" height="280" /></a>
-          <a href="#" class="product-name">Blue tshirt</a>
-          <a href="#" class="product-price">$26</a>
-        </li>
-        <li class="page-cataloge-item">
-          <div class="overlay">
-            <div class="socials">
-              <button class="icon icon1"></button>
-              <button class="icon icon2"></button>
-              <button class="icon icon3"></button>
-              <button class="icon icon4">Add to cart</button>
-            </div>
-          </div>
-
-          <a href="#"><img src="img/image2.jpg" alt="none image" width="255" height="280" /></a>
-          <a href="#" class="product-name">Woman shirt</a>
-          <a href="#" class="product-price">$31</a>
-        </li>
-        <li class="page-cataloge-item">
-          <div class="overlay">
-            <div class="socials">
-              <button class="icon icon1"></button>
-              <button class="icon icon2"></button>
-              <button class="icon icon3"></button>
-              <button class="icon icon4">Add to cart</button>
-            </div>
-
-          </div>
-          <a href="#"><img src="img/image3.jpg" alt="none image" width="255" height="280" /></a>
-          <a href="#" class="product-name">Yellow tshirt</a>
-          <a href="#" class="product-price">$21</a>
-        </li>
-        <li class="page-cataloge-item">
-          <div class="overlay">
-            <div class="socials">
-              <button class="icon icon1"></button>
-              <button class="icon icon2"></button>
-              <button class="icon icon3"></button>
-              <button class="icon icon4">Add to cart</button>
-            </div>
-
-          </div>
-          <a href="#"><img src="img/image4.jpg" alt="none image" width="255" height="280" /></a>
-          <a href="#" class="product-name">Cool lingerie</a>
-          <a href="#" class="product-price">$56</a>
-        </li>
-      </ul>
-    </section>
-  </main>
-  <footer class="footer-info container">
-    <p class="rights">
-      All rights reserved &#169 Dokan &#124 Designed
-      <span class="graph">ThemenGraph</span>
-    </p>
-  </footer>
+    </footer>
 </body>
-
 </html>
