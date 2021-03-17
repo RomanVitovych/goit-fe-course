@@ -7,4 +7,5 @@
 - [module_08](https://romanvitovych.github.io/goit-fe-course/module-08)
 - [module_09](https://romanvitovych.github.io/goit-fe-course/module-09)
 - [module_10](https://romanvitovych.github.io/goit-fe-course/module-10)
-- [module_11(galp)](http://192.168.0.104:1234/)
+- [module_11(gulp)](https://romanvitovych.github.io/goit-fe-course/module-11/build)
+
